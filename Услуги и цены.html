@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Услуги и цены</title>
+  <link rel="stylesheet" href="css/style1.css"/> <!--подключение таблицы стилей-->
+  <script>
+    function reloadPage() // функция обновления страницы
+    {
+      window.location.reload()
+    }
+
+    function Record() // функция отвечает за подсчет результата теста, а также вывод нового окна
+    {
+      kolvo = 0;
+// объявление всеъ необходимых элементов и присваивание им соответствующих значений
+      let napravlenie1 = document.getElementById('napravlenie1');
+      let napravlenie2 = document.getElementById('napravlenie2');
+      let napravlenie3 = document.getElementById('napravlenie3');
+      let napravlenie4 = document.getElementById('napravlenie4');
+      let napravlenie5 = document.getElementById('napravlenie5');
+      let napravlenie6 = document.getElementById('napravlenie6');
+      let napravlenie7 = document.getElementById('napravlenie7');
+      let napravlenie8 = document.getElementById('napravlenie8');
+      let napravlenie9 = document.getElementById('napravlenie9');
+      let napravlenie10 = document.getElementById('napravlenie10');
+      let napravlenie11 = document.getElementById('napravlenie11');
+      let heading1 = document.getElementById('heading');
+      heading1 = heading1.value;
+//подсчет занятий
+      if (napravlenie1.checked) kolvo = kolvo + 1;
+      if (napravlenie2.checked) kolvo = kolvo + 1;
+      if (napravlenie3.checked) kolvo = kolvo + 1;
+      if (napravlenie4.checked) kolvo = kolvo + 1;
+      if (napravlenie5.checked) kolvo = kolvo + 1;
+      if (napravlenie6.checked) kolvo = kolvo + 1;
+      if (napravlenie7.checked) kolvo = kolvo + 1;
+      if (napravlenie8.checked) kolvo = kolvo + 1;
+      if (napravlenie9.checked) kolvo = kolvo + 1;
+      if (napravlenie10.checked) kolvo = kolvo + 1;
+      if (napravlenie11.checked) kolvo = kolvo + 1;
+// создание и заполнение нового окна
+      let win = window.open("", "", "width=600,height=200"); <!--Создаем окно 600*200-->
+      win.document.open();
+      str = "<body>";
+      win.document.write(str);
+      win.document.body.style.background = "PaleTurquoise"; <!--Цвет фона нового окна-->
+      str = "<center><h2> Уважаемая(ый) " + heading1 + " !</h2></center>";
+      win.document.write(str);
+      str = "<center><h2>Вы успешно записаны на " + kolvo + "занятия!</h1></center>"; <!--Вывод строки с количеством занятий-->
+      win.document.write(str);
+      str = "</body>";
+      win.document.write(str);
+      str = '<br><input type="button" value="Закрыть"' + 'onClick="window.close();">'; <!--Кнопка закрыть-->
+      win.document.write(str);
+      win.document.close();
+    }
+  </script>
+</head>
+<body>
+<div id="content"> <!--основная часть страницы-->
+  <h1>Услуги и цены</h1> <!--Заголовок страницы оформлен стилем заголовка первого уровня - h1-->
+  <table border=1 width=1300px frame="box" align=center> <!-- Таблица по центру и шириной 1300px -->
+    <tr align=justify> <!-- Выравнивание текста по ширине -->
+      <td align=center width=400px> <!-- Размер ячейки и выравнивание по центру -->
+        <h2> Услуги </h2>
+      </td>
+      <td>
+        <h2> Индивидуальное занятие </h2>
+      </td>
+      <td>
+        <h2> Маленькая группа (до 5 человек) </h2>
+      </td>
+      <td>
+        <h2> Большая группа (от 5 до 10 человек) </h2>
+      </td>
+    </tr>
+    <tr align=justify> <!-- Выравнивание текста по ширине -->
+      <td align=center width=400px> <!-- Размер ячейки и выравнивание по центру -->
+        <h3> Подготовка к ЕГЭ </h3>
+        <!-- Нумерованный список-->
+        <ol>
+          <li>Один академический час, 45 мин;</li>
+          <li>Два академических часа, 90 мин;</li>
+        </ol>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>600 рублей</li>
+          <li>1000 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>500 рублей</li>
+          <li>700 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>350 рублей</li>
+          <li>550 рублей</li>
+        </ul>
+      </td>
+    </tr>
+    <tr align=justify> <!-- Выравнивание текста по ширине -->
+      <td align=center width=400px> <!-- Размер ячейки и выравнивание по
+центру -->
+        <h3> Подготовка к ОГЭ </h3>
+        <!-- Нумерованный список-->
+        <ol>
+          <li>Один академический час, 45 мин;</li>
+          <li>Два академических часа, 90 мин;</li>
+        </ol>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>550 рублей</li>
+          <li>900 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>450 рублей</li>
+          <li>650 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>300 рублей</li>
+          <li>500 рублей</li>
+        </ul>
+      </td>
+    </tr>
+    <tr align=justify> <!-- Выравнивание текста по ширине -->
+      <td align=center width=400px> <!-- Размер ячейки и выравнивание по
+центру -->
+        <h3> Репетиторские услуги </h3>
+        <!-- Нумерованный список-->
+        <ol>
+          <li>Один академический час, 45 мин;</li>
+          <li>Два академических часа, 90 мин;</li>
+        </ol>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>600 рублей</li>
+          <li>1000 рублей</li>
+        </ul>
+      </td>
+      <
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>500 рублей</li>
+          <li>800 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>400 рублей</li>
+          <li>700 рублей</li>
+        </ul>
+      </td>
+    </tr>
+    <tr align=justify> <!-- Выравнивание текста по ширине -->
+      <td align=center width=400px> <!-- Размер ячейки и выравнивание по
+центру -->
+        <h3> Подготовка к олимпиадам </h3>
+        <!-- Нумерованный список-->
+        <ol>
+          <li>Один академический час, 45 мин;</li>
+          <li>Два академических часа, 90 мин;</li>
+        </ol>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>800 рублей</li>
+          <li>1300 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>650 рублей</li>
+          <li>900 рублей</li>
+        </ul>
+      </td>
+      <td>
+        <!-- Маркированный список-->
+        <ul>
+          <br><br><br>
+          <li>500 рублей</li>
+          <li>800 рублей</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <h1>Запись на занятия</h1> <!--Заголовок страницы оформлен стилем заголовка
+первого уровня - h1-->
+  <table>
+    <tr> <!-- таблица для записи двух элементов в одну строку -->
+      <td><h3>Напишите Ваше ФИО</h3></td>
+      <td><input type='text' value="" name="heading" id='heading' size="50"></td>
+    </tr>
+  </table>
+  <!-- Вопрос с выбором нескольких ответов -->
+  <h3>Выберите направление(я):</h3>
+  <h6><input type="checkbox" name='napravlenie'
+             id='napravlenie1'/>Математика;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie2'/>Физика;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie3'/>Информатика;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie4'/>Русский
+    язык;</h6>
+  <h6><input type="checkbox" name='napravlenie'
+             id='napravlenie5'/>Литература;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie6'/>История;</h6>
+  <h6><input type="checkbox" name='napravlenie'
+             id='napravlenie7'/>Обществознание;</h6>
+  <h6><input type="checkbox" name='napravlenie'
+             id='napravlenie8'/>География;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie9'/>Биология;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie10'/>Химия;</h6>
+  <h6><input type="checkbox" name='napravlenie' id='napravlenie11'/>Иностранный
+    язык.</h6>
+  <!-- Вопрос с выбором одного ответа -->
+  <h3>Выберите тип занятия(ий):</h3>
+  <h6><input type='radio' name='formas' id='forma1'/>Подготовка к ЕГЭ;</h6>
+  <h6><input type='radio' name='formas' id='forma2'/>Подготовка к ОГЭ;</h6>
+  <h6><input type='radio' name='formas' id='forma3'/>Репетиторские услуги;</h6>
+  <h6><input type='radio' name='formas' id='forma4'/>Подготовка к
+    олимпиадам.</h6>
+  <!-- Вопрос с выбором одного ответа -->
+  <h3>Выберите форму занятия(ий):</h3>
+  <h6><input type='radio' name='forma' id='form1'/>Индивидуальное занятие;</h6>
+  <h6><input type='radio' name='forma' id='form2'/>Маленькая группа;</h6>
+  <h6><input type='radio' name='forma' id='form3'/>Большая группа.</h6>
+  <p><br>
+    <br>
+  <center><input type="button" value="Сброс" onclick="reloadPage()">
+    <!-- Кнопка сброса ответов -->
+    <input type="button" value="Записаться" OnClick="Record()"/></center><!-- Кнопка показа результатов, обращается к функции -->
+  <!-- Кнопка, при нажатии на которую, происходит переход на главную страницу-->
+  <br><br>
+  <center><input type="button" onclick="window.location.href = 'Главная страница.html';"
+                 value="Вернуться на главную страницу"/></center>
+</div>
+<div id="footer"><!--подвал страницы-->
+  <!--бегущая строка-->
+  <MARQUEE DIRECTION=right><h3>e-mail: belsirius@yandex.ru, Адрес: г.
+    Белгород, ул. Пушкина 49 "А", 3-й этаж, офиc 310, Телефон: 7-(4722)-23-55-
+    10</h3></MARQUEE>
+</div>
+
+</body>
+</html>
