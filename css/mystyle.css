@@ -1,0 +1,54 @@
+
+img {
+  vertical-align: center;
+  horiz-align: center;
+  height: 100px;
+  width: 100px;
+}
+
+body {
+  background-color: #f0f0ff; /*цвет фона*/
+  font-family: "Trebuchet MS", serif;
+  font-size: 21px;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none; /*отключается нумерация в упорядоченном списке*/
+  overflow: hidden; /*содержимое, выходящее за пределы блока элемента, будет скрыто*/
+  background-color: #ccccff; /*цвет фона ячейки*/
+  width: 100%; /*ширина*/
+}
+
+
+li a { /*Навигационные ячейки*/
+  display: block; /*блочный дисплей*/
+  float: left;
+  padding: 15px 14.2%;
+  text-decoration: none; /* убирает подчеркивание текста при ссылке*/
+}
+
+
+li a:hover { /*ячейка, на которую наведен курсор*/
+  background-color: #3333ff; /*цвет ячейки*/
+}
+
+footer {
+  background-color: #ccccff;
+  padding: 15px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+table {
+  margin: 0 auto;
+  padding: 2px 2px 2px 2px;
+}
+
+tr, td {
+  border: 2px solid #ccccff;
+  padding: 15px 15px 15px 15px;
+}

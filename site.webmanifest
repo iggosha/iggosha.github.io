@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "fujis.com",
+  "name": "fujiyamasushi.com",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
+  "background_color": "#f0f0f0",
   "theme_color": "#fafafa"
 }
