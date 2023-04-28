@@ -2,8 +2,16 @@
 img {
   vertical-align: center;
   horiz-align: center;
-  height: 100px;
-  width: 100px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.logo {
+  width: 5%;
+}
+
+h2 {
+  font-style: italic;
 }
 
 body {
@@ -13,7 +21,34 @@ body {
   text-align: center;
 }
 
+footer {
+  background-color: #ccccff;
+  padding: 15px;
+}
 
+section {
+  padding-bottom: 10px;
+}
+
+input {
+  background-color: #ccccff;
+  border-radius: 10px;
+  border: 5px solid #c0c0f0;
+  width: 220px;
+  height: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2%;
+
+  color: #000000;
+  font-family: "Trebuchet MS", serif;
+  font-size: 21px;
+  text-align: center;
+  overflow: auto;
+}
+
+
+/* Отображение меню навигации */
 ul {
   list-style-type: none; /*отключается нумерация в упорядоченном списке*/
   overflow: hidden; /*содержимое, выходящее за пределы блока элемента, будет скрыто*/
@@ -34,21 +69,23 @@ li a:hover { /*ячейка, на которую наведен курсор*/
   background-color: #3333ff; /*цвет ячейки*/
 }
 
-footer {
-  background-color: #ccccff;
-  padding: 15px;
-}
-
-section {
-  padding-bottom: 10px;
-}
-
+/* Настройки для таблиц */
 table {
   margin: 0 auto;
   padding: 2px 2px 2px 2px;
+  width: 50%;
 }
 
 tr, td {
-  border: 2px solid #ccccff;
-  padding: 15px 15px 15px 15px;
+  border: 3px solid #ccccff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+td:last-child {
+  border-radius: 3px 20px 15px 3px;
+}
+
+td:first-child {
+  border-radius: 15px 3px 3px 15px;
 }
