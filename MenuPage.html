@@ -31,6 +31,12 @@
         <h4>Нарезка тунца самой высокой категории, обладающей ярко выраженным вкусом и нежной текстурой.
           Они представляют собой крупные кусочки тунца на рисе и подаются без дополнительных приправ.</h4>
         <h4>30±5г, 190₽</h4>
+
+        <input type="button" onclick="if (num.innerText>0) num.innerText--;"
+               value="-"/>
+        <span id="num">0</span>
+        <input type="button" onclick="num.innerText++;"
+               value="+"/>
       </td>
     </tr>
     <tr>
@@ -170,8 +176,7 @@
   </table>
 </section>
 
-<input type="button" onclick="window.location.href = 'MainPage.html';"
-       value="Заказать"/>
+<input type="button" class = "newWindow" onclick="window.location.href = 'MainPage.html';" value="Заказать" />
 
 <footer>
   <MARQUEE>e-mail: belsirius@yandex.ru, Адрес: г. Белгород, ул. Пушкина 49 "А", 3-й этаж, офиc 310,
