@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 img {
   vertical-align: center;
   horiz-align: center;
@@ -6,10 +6,14 @@ img {
   width: 300px;
 }
 
-.logo {
-  width: 5%;
+footer {
+  background-color: #ccccff;
+  padding: 15px;
 }
 
+.logo {
+  width: 10%;
+}
 
 .newWindow {
 }
@@ -29,58 +33,54 @@ span {
 
 body {
   background-color: #f0f0ff; /*цвет фона*/
-  font-family: "Trebuchet MS", serif;
+  font-family: "Mulish",  sans-serif;
   font-size: 21px;
   text-align: center;
 }
 
-footer {
-  background-color: #ccccff;
-  padding: 15px;
-}
 
 
 input[type="button"] {
   background-color: #ccccff;
-  border-radius: 10px;
+  border-radius: 22px;
   border: 5px solid #c0c0f0;
-  width: 220px;
-  height: 100px;
+  width: 55px;
+  height: 55px;
   text-decoration: none;
   cursor: pointer;
   margin: 2%;
-  font-family: "Trebuchet MS", serif;
-  font-size: 1em;
+  font-family: "Mulish",  sans-serif;
+  font-size: 1.5em;
   text-align: center;
 }
 
-input[type="text"] {
-  border-radius: 2px;
-  border: 2px solid #000000;
+input[type="email"] {
+  border-radius: 5px;
+  border: 5px solid #000000;
   width: 420px;
   height: 42px;
   cursor: text;
-  font-family: "Trebuchet MS", serif;
+  font-family: "Mulish",  sans-serif;
   font-size: 21px;
 }
-
-
 
 /* Отображение меню навигации */
 ul {
   list-style-type: none; /*отключается нумерация в упорядоченном списке*/
   overflow: hidden; /*содержимое, выходящее за пределы блока элемента, будет скрыто*/
   background-color: #ccccff; /*цвет фона ячейки*/
-  width: 100%; /*ширина*/
+  width: 98%; /*ширина*/
 }
 
 
 li a { /*Навигационные ячейки*/
   display: block; /*блочный дисплей*/
   float: left;
-  font-size: 1.35em;
+  font-size: 1.4em;
+  font-family: "Mulish", sans-serif;
   padding: 15px 13.4%;
   text-decoration: none; /* убирает подчеркивание текста при ссылке*/
+  border:  5px solid #c0c0f0;
 }
 
 
@@ -96,15 +96,15 @@ table {
 }
 
 tr, td {
-  border: 3px solid #ccccff;
+  border: 5px solid #ccccff;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 td:last-child {
-  border-radius: 3px 20px 15px 3px;
+  border-radius: 5px 20px 15px 5px;
 }
 
 td:first-child {
-  border-radius: 15px 3px 3px 15px;
+  border-radius: 15px 5px 5px 15px;
 }

@@ -17,7 +17,7 @@ function openOrderWindow() {
   win.document.write('<head> <title>Заказ</title> <link rel="stylesheet" href="css/mystyle.css"/> </head>')
   win.document.write("Ваш заказ:<br><br>");
   win.document.write(text);
-  win.document.write('<input type="button" value="Подтвердить" onClick="window.close();">');
+  win.document.write('<input type="button" value="Подтвердить" onClick="window.close();" style="width: 300px; height: 100px">');
   win.document.write('<h6 style="text-align: right; font-size: 0.5em">При ошибке перезагрузите главную страницу</h6>')
   win.document.close();
 

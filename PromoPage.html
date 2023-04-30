@@ -1,16 +1,18 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Фудзи-Суши: Скидки</title>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="icon.png"/> <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/mystyle.css"/> <!--подключение таблицы стилей-->
+  <link rel="icon" href="icon.png"/>
+  <link rel="stylesheet" href="css/mystyle.css"/>
+  <script src="js/emailPromo.js"></script>
 </head>
 
 <body>
 
 <header>
+  <h1>Фудзи-Суши</h1>
   <img src="icon.png" alt="Логотип" class="logo">
 </header>
 <nav> <!--Навигация страницы-->
@@ -20,7 +22,8 @@
     <li><a href="PromoPage.html">Скидки</a></li>
   </ul>
 </nav>
-<section>
+<section  style="border:  5px solid #ccccff; border-radius: 10%">
+  <h1>Скидки</h1>
   <article>
     <table>
       <tr>
@@ -69,14 +72,13 @@
   </article>
 </section>
 
+<section  style="border:  5px dashed #ccccff;%">
 <h3>Введите свою почту и получите промокод на скидку при втором заказе: </h3>
 <label>
-  <input type="text"/>
+  <input type="email" id = "emailField"/>
 </label>
-<br>
-
-<input type="button" onclick="window.location.href = 'MainPage.html';" value="Заказать" class = "newWindow"/>
-
+<input type="button" onclick="checkEmail(emailField);" value="Получить" style="width: 200px; height: 100px" />
+</section>
 <footer>
   <MARQUEE>e-mail: belsirius@yandex.ru, Адрес: г. Белгород, ул. Пушкина 49 "А", 3-й этаж110, офиc 310,
     Телефон: 7-(4722)-23-55-10
