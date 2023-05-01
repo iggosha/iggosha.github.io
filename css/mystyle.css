@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
 img {
   vertical-align: center;
   horiz-align: center;
@@ -18,8 +18,12 @@ footer {
 .newWindow {
 }
 
-h2 {
-  font-style: italic;
+h1, h2 {
+  font-weight: 900;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 500;
 }
 
 p {
@@ -28,16 +32,23 @@ p {
 }
 
 span {
-  font-size: 2em;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+section {
+  margin-bottom: 1%;
+  background-color: #fff0f0;
+  border:  5px solid #ccccff;
+  border-radius: 5%;
 }
 
 body {
   background-color: #f0f0ff; /*цвет фона*/
-  font-family: "Mulish",  sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 21px;
   text-align: center;
 }
-
 
 
 input[type="button"] {
@@ -46,21 +57,25 @@ input[type="button"] {
   border: 5px solid #c0c0f0;
   width: 55px;
   height: 55px;
-  text-decoration: none;
+  font-weight: 700;
   cursor: pointer;
   margin: 2%;
-  font-family: "Mulish",  sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.5em;
   text-align: center;
 }
 
+input[type="button"]:hover {
+  background-color: #c0c0f0; /*цвет ячейки*/
+}
+
 input[type="email"] {
-  border-radius: 5px;
-  border: 5px solid #000000;
+  border-radius: 1%;
+  border: 5px solid #c0c0f0;
   width: 420px;
   height: 42px;
   cursor: text;
-  font-family: "Mulish",  sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 21px;
 }
 
@@ -78,9 +93,10 @@ li a { /*Навигационные ячейки*/
   float: left;
   font-size: 1.4em;
   font-family: "Mulish", sans-serif;
-  padding: 15px 13.4%;
+  font-weight: 900;
+  padding: 15px 12.9%;
   text-decoration: none; /* убирает подчеркивание текста при ссылке*/
-  border:  5px solid #c0c0f0;
+  border: 5px solid #c0c0f0;
 }
 
 
@@ -91,20 +107,20 @@ li a:hover { /*ячейка, на которую наведен курсор*/
 /* Настройки для таблиц */
 table {
   margin: 0 auto;
-  padding: 2px;
+  padding: 1em;
   width: 50%;
 }
 
 tr, td {
   border: 5px solid #ccccff;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 0 1em;
+  border-radius: 1%;
 }
 
 td:last-child {
-  border-radius: 5px 20px 15px 5px;
+  border-radius: 1% 5% 5% 1%;
 }
 
 td:first-child {
-  border-radius: 15px 5px 5px 15px;
+  border-radius: 5% 1% 1% 5%;
 }
