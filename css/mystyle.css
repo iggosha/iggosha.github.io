@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+
+/*
+#ccffff - regular
+#c0c0f0 - darker (border)
+#fff0f0 - peach, for sections
+*/
+
 img {
   vertical-align: center;
   horiz-align: center;
@@ -20,15 +27,17 @@ footer {
 
 h1, h2 {
   font-weight: 900;
+  margin: 0.5em;
 }
 
 h3, h4, h5, h6 {
   font-weight: 500;
+  margin: 0.5em 0 0 0;
 }
 
-p {
+article {
   width: 50%;
-  margin: 2% auto;
+  margin: 1em auto;
 }
 
 span {
@@ -39,12 +48,12 @@ span {
 section {
   margin-bottom: 1%;
   background-color: #fff0f0;
-  border:  5px solid #ccccff;
+  border: 5px solid #ccccff;
   border-radius: 5%;
 }
 
 body {
-  background-color: #f0f0ff; /*цвет фона*/
+  background-color: #fff0f0; /*цвет фона*/
   font-family: "Mulish", sans-serif;
   font-size: 21px;
   text-align: center;
@@ -69,9 +78,16 @@ input[type="button"]:hover {
   background-color: #c0c0f0; /*цвет ячейки*/
 }
 
+
+input[type="button"]:active {
+  color: #fff0f0; /*цвет ячейки*/
+}
+
+
+
 input[type="email"] {
   border-radius: 1%;
-  border: 5px solid #c0c0f0;
+  border: 5px solid #ccccff;
   width: 420px;
   height: 42px;
   cursor: text;
@@ -99,14 +115,17 @@ li a { /*Навигационные ячейки*/
   border: 5px solid #c0c0f0;
 }
 
-
 li a:hover { /*ячейка, на которую наведен курсор*/
   background-color: #c0c0f0; /*цвет ячейки*/
 }
 
+li a:active {
+  color: #fff0f0;
+}
+
 /* Настройки для таблиц */
 table {
-  margin: 0 auto;
+  margin: auto;
   padding: 1em;
   width: 50%;
 }
