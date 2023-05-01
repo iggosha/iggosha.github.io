@@ -100,10 +100,12 @@ ul {
   list-style-type: none; /*отключается нумерация в упорядоченном списке*/
   overflow: hidden; /*содержимое, выходящее за пределы блока элемента, будет скрыто*/
   background-color: #ccccff; /*цвет фона ячейки*/
-  width: 98%; /*ширина*/
+  width: 107%; /*ширина*/
   top: 0;/*цепляет вверху*/
   position: fixed; /*фиксация*/
   z-index: 2;
+  margin: 0;
+  padding: 0;
 }
 
 
