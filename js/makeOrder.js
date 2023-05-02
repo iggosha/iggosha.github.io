@@ -2,10 +2,10 @@ let text = "";
 
 function addProducts() {
   let counter = 0;
-  for (let amount of document.getElementsByClassName('amounts')) {
+  for (let amount of document.getElementsByClassName('amounts')) { //Типа берём из страницы menu
     let pr = document.getElementsByClassName('products')[counter++].textContent;
     let am = amount.textContent;
-    if (am != 0) {
+    if (am != 0) {//Добавляем в текст заказа продукт
       text += pr + ": " + am + "<br>";
     }
   }
@@ -23,10 +23,9 @@ function openOrderWindow() {
   }
   win.document.write("<br> Введите адрес для доставки: <br> ");
   win.document.write("<label>\n" +
-    "    <input type=\"email\" id=\"emailField\" placeholder=\"ул. Уличная, дом 1, кв 1\"/>\n" +
+    "    <input type=\"email\" placeholder=\"ул. Уличная, дом 1, кв 1\"/>\n" +
     "  </label> <br>");
   win.document.write('<input type="button" value="Заказать" onClick="window.close();" style="width: 200px; height: 75px">');
-  win.document.write('<h6 style="text-align: right; font-size: 0.5em">При ошибке перезагрузите главную страницу</h6>');
   win.document.close();
   text = "";
 }

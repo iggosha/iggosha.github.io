@@ -6,7 +6,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="icon.png"/>
   <link rel="stylesheet" href="css/mystyle.css"/>
-  <script src="js/makeOrder.js"></script>
+  <script src="js/makeOrder.js"></script> <!--Подкючение джс файла-->
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <li><a href="MenuPage.html">Меню</a></li>
     <li><a href="PromoPage.html" style="padding-right: 5%">Скидки</a></li>
     <li>
-      <a style="padding-right: 1%;padding-left: 1%;border-right: 0;" id = "cart" onclick="addProducts();openOrderWindow();"> 0 </a>
+      <a style="padding-right: 1%;padding-left: 1%;border-right: 0;" id = "cart" onclick="addProducts();openOrderWindow();"> 0 </a><!--Смещение внутри элемента паддинг лефт райт-->
     </li>
     <li>
       <a style="padding-right: 1%;padding-left: 1%;border-left: 0;" onclick="addProducts();openOrderWindow();">
@@ -41,7 +41,7 @@
           Они представляют собой крупные кусочки тунца на рисе и подаются без дополнительных приправ.</h4>
         <h4>30±5г, 190₽</h4>
         <input type="button" onclick="if (num1.innerText>0) {num1.innerText--;cart.innerText--;}" value="-"/>
-        <span class="amounts" id = "num1">0</span>
+        <span class="amounts" id = "num1">0</span> <!--Группирует элементы (цифереки для продуктов)-->
         <input type="button" onclick="num1.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>

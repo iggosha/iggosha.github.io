@@ -26,9 +26,6 @@ footer {
   padding: 15px;
 }
 
-.newWindow {
-}
-
 h1, h2 {
   font-weight: 900;
   margin: 0.5em;
@@ -41,7 +38,7 @@ h3, h4, h5, h6 {
 
 article {
   width: 60%;
-  margin: 1em auto;
+  margin: 1em auto; /*Отсуп за границу - для артИкла, auto центрирует по середине*/
 }
 
 span {
