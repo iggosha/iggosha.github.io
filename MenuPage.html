@@ -20,7 +20,8 @@
   <ul>
     <li><a href="index.html">Главная</a></li>
     <li><a href="MenuPage.html">Меню</a></li>
-    <li><a href="PromoPage.html">Скидки</a></li>
+    <li><a href="PromoPage.html" style="padding-right: 5%">Скидки</a></li>
+    <li><a style="padding-right: 2%;padding-left: 2%;" id = "cart" onclick="addProducts();openOrderWindow();"> 0 </a></li> CART
   </ul>
 </nav>
 <section>
@@ -33,9 +34,9 @@
         <h4>Нарезка тунца самой высокой категории, обладающей ярко выраженным вкусом и нежной текстурой.
           Они представляют собой крупные кусочки тунца на рисе и подаются без дополнительных приправ.</h4>
         <h4>30±5г, 190₽</h4>
-        <input type="button" onclick="if (num1.innerText>0) num1.innerText--;" value="-"/>
+        <input type="button" onclick="if (num1.innerText>0) {num1.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num1">0</span>
-        <input type="button" onclick="num1.innerText++;" value="+"/>
+        <input type="button" onclick="num1.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -44,9 +45,9 @@
         <h2 class="products">СУШИ С ЛОСОСЕМ</h2>
         <h4>Сырые нарезки свежего лосося на рисе, подаются с соевым соусом и имеют нежный вкус с лёгкой сладостью.</h4>
         <h4>34±15г, 79₽</h4>
-        <input type="button" onclick="if (num2.innerText>0) num2.innerText--;" value="-"/>
+        <input type="button" onclick="if (num2.innerText>0) {num2.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num2">0</span>
-        <input type="button" onclick="num2.innerText++;" value="+"/>
+        <input type="button" onclick="num2.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -56,9 +57,9 @@
         <h4>Свежая креветка на рисе, более мягкая и сладковатая, чем другие виды суши.
           Они подаются с соевым соусом и имеют легкий и свежий вкус.</h4>
         <h4>30±5г, 490₽</h4>
-        <input type="button" onclick="if (num3.innerText>0) num3.innerText--;" value="-"/>
+        <input type="button" onclick="if (num3.innerText>0) {num3.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num3">0</span>
-        <input type="button" onclick="num3.innerText++;" value="+"/>
+        <input type="button" onclick="num3.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -68,9 +69,9 @@
         <h4>Наиболее роскошный и дорогой вид тунца, имеющий мраморную структуру, подается в виде
           крупных кусочков на рисе и обладает богатым вкусом и глубоким ароматом.</h4>
         <h4>30±5г, 550₽</h4>
-        <input type="button" onclick="if (num4.innerText>0) num4.innerText--;" value="-"/>
+        <input type="button" onclick="if (num4.innerText>0) {num4.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num4">0</span>
-        <input type="button" onclick="num4.innerText++;" value="+"/>
+        <input type="button" onclick="num4.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -80,9 +81,9 @@
         <h4>Роскошные кусочки угря на кусочках риса, подаются с вяленым имбирем для нейтрализации жира и соевым
           соусом для придания пикантности.</h4>
         <h4>34±15г, 95₽</h4>
-        <input type="button" onclick="if (num5.innerText>0) num5.innerText--;" value="-"/>
+        <input type="button" onclick="if (num5.innerText>0) {num5.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num5">0</span>
-        <input type="button" onclick="num5.innerText++;" value="+"/>
+        <input type="button" onclick="num5.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
 
@@ -99,9 +100,9 @@
         <h4>Африканские страсти кипят в этом сете! Много лосося, краба и новый ролл с
           кальмаром – лучшее решение.</h4>
         <h4>825г, 1150₽</h4>
-        <input type="button" onclick="if (num6.innerText>0) num6.innerText--;" value="-"/>
+        <input type="button" onclick="if (num6.innerText>0) {num6.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num6">0</span>
-        <input type="button" onclick="num6.innerText++;" value="+"/>
+        <input type="button" onclick="num6.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -111,9 +112,9 @@
         <h4>WOW! В меню кальмар! Два ролла с кальмаром в одном сете, чтобы вы
           распробовали каждый, и любимые роллы Лайт и Нагато для тех, кому хочется больше лосося.</h4>
         <h4>920г, 1250₽</h4>
-        <input type="button" onclick="if (num7.innerText>0) num7.innerText--;" value="-"/>
+        <input type="button" onclick="if (num7.innerText>0){num7.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num7">0</span>
-        <input type="button" onclick="num7.innerText++;" value="+"/>
+        <input type="button" onclick="num7.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -123,9 +124,9 @@
         <h4>Тебе захочется пробовать его снова и снова, и каждый раз он будет
           раскрываться по-новому. Не забудь выбрать соус, который будет дополнять твой сет - он станет отличным дополнением.</h4>
         <h4>875г, 875₽</h4>
-        <input type="button" onclick="if (num8.innerText>0) num8.innerText--;" value="-"/>
+        <input type="button" onclick="if (num8.innerText>0) {num8.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num8">0</span>
-        <input type="button" onclick="num8.innerText++;" value="+"/>
+        <input type="button" onclick="num8.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -134,9 +135,9 @@
         <h2 class="products">СЕТ ИНЬ-ЯНЬ</h2>
         <h4>Идеально подойдёт для романтического ужина, сет заряжен на любовь и гармонию.</h4>
         <h4>515г, 715₽</h4>
-        <input type="button" onclick="if (num9.innerText>0) num9.innerText--;" value="-"/>
+        <input type="button" onclick="if (num9.innerText>0){num9.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num9">0</span>
-        <input type="button" onclick="num9.innerText++;" value="+"/>
+        <input type="button" onclick="num9.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -145,9 +146,9 @@
         <h2 class="products">СЕТ СОТНЯ</h2>
         <h4>В сто раз больше удовольствия! Вокруг этого сета друзья собираются сами.</h4>
         <h4>2185г, 3490₽</h4>
-        <input type="button" onclick="if (num10.innerText>0) num10.innerText--;" value="-"/>
+        <input type="button" onclick="if (num10.innerText>0) {num10.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num10">0</span>
-        <input type="button" onclick="num10.innerText++;" value="+"/>
+        <input type="button" onclick="num10.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
   </table>
@@ -162,9 +163,9 @@
         <h2 class="products">НАПИТОК КОЛА ЧЕРНОГОЛОВКА</h2>
         <h4>Любимый вкус колы в бутылке 0.5л!</h4>
         <h4>0.5л, 109₽</h4>
-        <input type="button" onclick="if (num11.innerText>0) num11.innerText--;" value="-"/>
+        <input type="button" onclick="if (num11.innerText>0) {num11.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num11">0</span>
-        <input type="button" onclick="num11.innerText++;" value="+"/>
+        <input type="button" onclick="num11.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -173,9 +174,9 @@
         <h2 class="products">МОРС БОДРЯЩИЙ ЛИМОН</h2>
         <h4>Освежающий и лёгкий, заряжает энергией и хорошо утоляет жажду!</h4>
         <h4>0.5л, 159₽</h4>
-        <input type="button" onclick="if (num12.innerText>0) num12.innerText--;" value="-"/>
+        <input type="button" onclick="if (num12.innerText>0) {num12.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num12">0</span>
-        <input type="button" onclick="num12.innerText++;" value="+"/>
+        <input type="button" onclick="num12.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -184,9 +185,9 @@
         <h2 class="products">ВАСАБИ</h2>
         <h4>Ощутите яркий взрыв вкуса с васаби! Это пряная и ароматная приправа, которая послужит идеальным дополнением к вашим блюдам!</h4>
         <h4>10г, 20₽</h4>
-        <input type="button" onclick="if (num13.innerText>0) num13.innerText--;" value="-"/>
+        <input type="button" onclick="if (num13.innerText>0) {num13.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num13">0</span>
-        <input type="button" onclick="num13.innerText++;" value="+"/>
+        <input type="button" onclick="num13.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -197,9 +198,9 @@
           Его свежий вкус и небольшая острота делают его неотъемлемой частью японской кухни.
         </h4>
         <h4>30г, 45₽</h4>
-        <input type="button" onclick="if (num14.innerText>0) num14.innerText--;" value="-"/>
+        <input type="button" onclick="if (num14.innerText>0) {num14.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num14">0</span>
-        <input type="button" onclick="num14.innerText++;" value="+"/>
+        <input type="button" onclick="num14.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
     <tr>
@@ -209,9 +210,9 @@
         <h4>Соевый соус — это необходимый элемент любого японского блюда, который подчеркивает вкус ингредиентов и яркие нотки соевых бобов,
           создавая уникальный вкусовой букет.</h4>
         <h4>35г, 45₽</h4>
-        <input type="button" onclick="if (num15.innerText>0) num15.innerText--;" value="-"/>
+        <input type="button" onclick="if (num15.innerText>0) {num15.innerText--;cart.innerText--;}" value="-"/>
         <span class="amounts" id = "num15">0</span>
-        <input type="button" onclick="num15.innerText++;" value="+"/>
+        <input type="button" onclick="num15.innerText++;cart.innerText++;" value="+"/>
       </td>
     </tr>
   </table>
@@ -222,7 +223,7 @@
 
 <footer>
   <MARQUEE>Заказывайте наши ароматные и вкусные блюда! Приятного аппетита!
-    Связь с поддержкой: Почта: fuji-sushi@mail.ru, Телефон: +8(800)555-35-35
+    Связь с поддержкой: Почта: fuji-sushi@mail.ru, Телефон: 8(800)555-35-35
   </MARQUEE>
 </footer>
 </body>

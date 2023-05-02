@@ -13,13 +13,18 @@ img {
   width: 300px;
 }
 
+.logo {
+  width: 10%;
+}
+
+.networks {
+  width: 0.9em;
+  height: 0.9em;
+}
+
 footer {
   background-color: #ccccff;
   padding: 15px;
-}
-
-.logo {
-  width: 10%;
 }
 
 .newWindow {
@@ -83,6 +88,9 @@ input[type="button"]:active {
   color: #fff0f0; /*цвет ячейки*/
 }
 
+header {
+  margin-top: 75px;
+}
 
 
 input[type="email"] {
@@ -100,7 +108,7 @@ ul {
   list-style-type: none; /*отключается нумерация в упорядоченном списке*/
   overflow: hidden; /*содержимое, выходящее за пределы блока элемента, будет скрыто*/
   background-color: #ccccff; /*цвет фона ячейки*/
-  width: 107%; /*ширина*/
+  width: 99%; /*ширина*/
   top: 0;/*цепляет вверху*/
   position: fixed; /*фиксация*/
   z-index: 2;
@@ -115,7 +123,7 @@ li a { /*Навигационные ячейки*/
   font-size: 1.4em;
   font-family: "Mulish", sans-serif;
   font-weight: 900;
-  padding: 15px 12.9%;
+  padding: 15px 13.4501%;
   text-decoration: none; /* убирает подчеркивание текста при ссылке*/
   border: 5px solid #c0c0f0;
 }
